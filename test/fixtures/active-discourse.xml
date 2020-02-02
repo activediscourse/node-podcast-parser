@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/static/rss.xsl" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pinecast="https://pinecast.com/rss-dtd/1.0/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:rp="https://w3id.org/rp/v1" version="2.0">
+  <channel>
+    <title>Active Discourse</title>
+    <link>http://activediscourse.com</link>
+    <atom:link href="https://pinecast.com/feed/activediscourse" rel="self" type="application/rss+xml" />
+    <generator>Pinecast (https://pinecast.com)</generator>
+    <language>en</language>
+    <itunes:author>SeekAndDefine</itunes:author>
+    <description>
+      <![CDATA[A rolling conversation between a devoted Android user and a passionate Apple user. These two friends intend to explore the gray areas between their platforms and find agreement.]]>
+    </description>
+    <itunes:owner>
+      <itunes:name>SeekAndDefine</itunes:name>
+      <itunes:email>skdfmanagement@icloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png" />
+    <image>
+      <title>Active Discourse</title>
+      <link>http://activediscourse.com</link>
+      <url>https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png</url>
+    </image>
+    <pinecast:site>http://activediscourse.com</pinecast:site>
+    <copyright>Copyright 2020 All rights reserved.</copyright>
+    <itunes:subtitle>Evolve or Die</itunes:subtitle>
+    <itunes:category text="Leisure">
+      <itunes:category text="Games" />
+    </itunes:category>
+    <itunes:category text="Technology" />
+    <itunes:category text="TV &amp; Film" />
+    <item>
+      <title>CES 2020: Now I’m Thinking This is a Joke</title>
+      <guid isPermaLink="false">https://pinecast.com/guid/7b9254e2-8f80-4ba8-892c-8324e3dd3cb6</guid>
+      <pubDate>Mon, 20 Jan 2020 15:40:00 -0000</pubDate>
+      <link>http://activediscourse.com/episode/7b9254e28f804ba8/ces-2020-now-i-m-thinking-this-is-a-joke</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/03e115b3-99ed-4561-a3ea-c8ddfc098f30/artwork/1b1076cd-9794-43fa-aa4c-7b82cba5c989/image.jpg" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:59:40</itunes:duration>
+      <description>
+        <![CDATA[<p>Bo and Brett have opinions to share about the weird products that appeared at CES 2020. They discuss the small quality of life updates for the Nest Home hub, all the great Samsung TV’s, and the Razer Kishi. Closing the episode out, Bo reminds us of the very use case specific devices Charmin brought to CES. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests to ActiveDiscourse@icloud.com</p>
+
+<p>PS- We are also curious to know what the industry standard alternative to Gmail is. Let us know!</p>
+]]>
+      </description>
+      <itunes:subtitle>CES... Tis a Silly Place</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Bo and Brett have opinions to share about the weird products that appeared at CES 2020. They discuss the small quality of life updates for the Nest Home hub, all the great Samsung TV’s, and the Razer Kishi. Closing the episode out, Bo reminds us of the very use case specific devices Charmin brought to CES. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests to ActiveDiscourse@icloud.com</p>
+
+<p>PS- We are also curious to know what the industry standard alternative to Gmail is. Let us know!</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/7b9254e2-8f80-4ba8-892c-8324e3dd3cb6.mp3?source=rss&amp;ext=asset.mp3" length="43267845" type="audio/mpeg" />
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
+      <title>Lady in a Tube Reviewed</title>
+      <guid isPermaLink="false">https://pinecast.com/guid/2fb38fc2-e6da-42a3-99ac-bce6ba92c219</guid>
+      <pubDate>Mon, 30 Dec 2019 01:30:00 -0000</pubDate>
+      <link>http://activediscourse.com/episode/2fb38fc2e6da42a3/lady-in-a-tube-reviewed</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/03e115b3-99ed-4561-a3ea-c8ddfc098f30/artwork/e37717b1-5da2-4b51-9ead-18cae8197ea9/image.jpg" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:37:15</itunes:duration>
+      <description>
+        <![CDATA[<h1>Episode Notes</h1>
+
+<p>Brett bought and returned a HomePod and is fired up about it. Brett triggers Siri several times throughout the episode, don't listen to this episode on a loud speaker for your own sanity. Bo shares his condolences. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+
+<p>This episode uses the Light Mode version of our artwork. Enjoy!</p>
+]]>
+      </description>
+      <itunes:subtitle>Brett is upset by the HomePod</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<h1>Episode Notes</h1>
+
+<p>Brett bought and returned a HomePod and is fired up about it. Brett triggers Siri several times throughout the episode, don't listen to this episode on a loud speaker for your own sanity. Bo shares his condolences. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+
+<p>This episode uses the Light Mode version of our artwork. Enjoy!</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/2fb38fc2-e6da-42a3-99ac-bce6ba92c219.mp3?source=rss&amp;ext=asset.mp3" length="27139938" type="audio/mp3" />
+      <itunes:episode>8</itunes:episode>
+    </item>
+    <item>
+      <title>Nostalgia Vol. 2009</title>
+      <guid isPermaLink="false">https://pinecast.com/guid/0c470b39-b320-47ae-97df-a80e4f1c01e4</guid>
+      <pubDate>Thu, 19 Dec 2019 01:49:31 -0000</pubDate>
+      <link>http://activediscourse.com/episode/0c470b39b32047ae/nostalgia-vol-2009</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/03e115b3-99ed-4561-a3ea-c8ddfc098f30/artwork/fc4f7ab4-90e6-4151-8d80-015d6c9a154b/image.jpg" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>01:12:34</itunes:duration>
+      <description>
+        <![CDATA[<h1>Episode Notes</h1>
+
+<p>Bo and Brett get nostalgic about the 2010's. They dig into the archives from 2009 and dig into how technology has changed since. They discuss the explosion of Netflix, the rivalry between Apple and Google, and the transformation Microsoft had over the decade. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+]]>
+      </description>
+      <itunes:subtitle>Nostalgic for the 2010’s decade</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<h1>Episode Notes</h1>
+
+<p>Bo and Brett get nostalgic about the 2010's. They dig into the archives from 2009 and dig into how technology has changed since. They discuss the explosion of Netflix, the rivalry between Apple and Google, and the transformation Microsoft had over the decade. </p>
+
+<p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/0c470b39-b320-47ae-97df-a80e4f1c01e4.mp3?source=rss&amp;aid=ca1628ca-5c60-4bfb-92e4-a2b8826f800e.mp3" length="52640044" type="audio/mp3" />
+      <itunes:episode>7</itunes:episode>
+    </item>
+    <item>
+      <title>2019 In Review</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/7-2019-in-review-e18976d0a856b6ebf34f253f47995acc</guid>
+      <pubDate>Mon, 25 Nov 2019 01:51:11 -0000</pubDate>
+      <link>http://activediscourse.com/episode/3ff96f672c9343ec/2019-in-review</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>01:22:06</itunes:duration>
+      <description>
+        <![CDATA[<p>Bo and Brett discuss the most important stories of 2019 and the stories they expect will define 2020. </p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p><p>Ps- We recorded this before Samsung announced their Galaxy S9 beta plans. We'll follow up next month.</p>
+]]>
+      </description>
+      <itunes:subtitle>Bo and Brett discuss the most important stories of 2019 and the stories they expect will define 2020. Please feel free to share your opinions, feedback, or topic requests by emailing us at SeekAndDefine@gmail.comPs- We recorded this before Samsung anno...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Bo and Brett discuss the most important stories of 2019 and the stories they expect will define 2020. </p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p><p>Ps- We recorded this before Samsung announced their Galaxy S9 beta plans. We'll follow up next month.</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/3ff96f67-2c93-43ec-b7ef-8f6402dedbeb.mp3?source=rss&amp;aid=4871da42-88a1-4666-81db-4029198a036e.mp3" length="61330065" type="audio/mpeg" />
+      <itunes:episode>6</itunes:episode>
+    </item>
+    <item>
+      <title>Samsung Galaxy Tab S6 Reviewed</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/5-the-samsung-galaxy-tab-s6-reviewed-968339c8e678563b9db7b2ed5fcaf0d1</guid>
+      <pubDate>Sun, 13 Oct 2019 13:48:58 -0000</pubDate>
+      <link>http://activediscourse.com/episode/0e44d57c8ee847cc/samsung-galaxy-tab-s6-reviewed</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>01:15:42</itunes:duration>
+      <description>
+        <![CDATA[<p>Bo bought a Galaxy Tab S6 not only for himself, but for you dear listener. Brett attempts to understand and break Bo's allegence to the Android tablet. Here is our review.</p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+]]>
+      </description>
+      <itunes:subtitle>Bo bought a Galaxy Tab S6 not only for himself, but for you dear listener. Brett attempts to understand and break Bo's allegence to the Android tablet. Here is our review.Please feel free to share your opinions, feedback, or topic requests by emailing u...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Bo bought a Galaxy Tab S6 not only for himself, but for you dear listener. Brett attempts to understand and break Bo's allegence to the Android tablet. Here is our review.</p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/0e44d57c-8ee8-47cc-b2b9-cbc9001b7bb8.mp3?source=rss&amp;aid=55b561cd-9276-4ada-93c2-bbfc40a2cfe6.mp3" length="56787221" type="audio/mpeg" />
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
+      <title>iOS 13 Hesitation</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/4-ios-13-hesitation-aa0316eb2309e72153ef37a6e36df74d</guid>
+      <pubDate>Thu, 19 Sep 2019 01:18:51 -0000</pubDate>
+      <link>http://activediscourse.com/episode/0cd701c10cee4be9/ios-13-hesitation</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:13:59</itunes:duration>
+      <description>
+        <![CDATA[<p>Bo hears out Brett's concerns for updating his devices to iOS 13. They discuss the poor beta cycle, the unusual release pattern for iOS 13 and 13.1. Finally they discuss Brett's dream OS release cycle.</p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </description>
+      <itunes:subtitle>Bo hears out Brett's concerns for updating his devices to iOS 13. They discuss the poor beta cycle, the unusual release pattern for iOS 13 and 13.1. Finally they discuss Brett's dream OS release cycle.Please feel free to share your opinions, feedback, o...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Bo hears out Brett's concerns for updating his devices to iOS 13. They discuss the poor beta cycle, the unusual release pattern for iOS 13 and 13.1. Finally they discuss Brett's dream OS release cycle.</p><p>Please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/0cd701c1-0cee-4be9-869f-0f35f47171c6.mp3?source=rss&amp;aid=ec42fb84-298f-483c-af61-e4d33660ec90.mp3" length="10976611" type="audio/mpeg" />
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>Last Leg of the 3-Year Upgrade Cycle</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/3the-last-leg-of-the-3-year-upgrade-cycle-09594130237b97ce889158f89273025e</guid>
+      <pubDate>Thu, 19 Sep 2019 01:00:17 -0000</pubDate>
+      <link>http://activediscourse.com/episode/3b1d8b58710f4227/last-leg-of-the-3-year-upgrade-cycle</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/covers/932ea303-a7ce-4636-a55d-4cb307158322/ACDNov2019Darkmode_1.png" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:50:57</itunes:duration>
+      <description>
+        <![CDATA[<p>Bo and Brett discuss our surprises of the September 2019 Apple Event. Bo has a surprise announcement for Brett. Brett is trying to resist the iPhone 11 Pro reality distortion field. And they both have gripes they'd like to discuss.</p><p>Also, please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </description>
+      <itunes:subtitle>Bo and Brett discuss our surprises of the September 2019 Apple Event. Bo has a surprise announcement for Brett. Brett is trying to resist the iPhone 11 Pro reality distortion field. And they both have gripes they'd like to discuss.Also, please feel free...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Bo and Brett discuss our surprises of the September 2019 Apple Event. Bo has a surprise announcement for Brett. Brett is trying to resist the iPhone 11 Pro reality distortion field. And they both have gripes they'd like to discuss.</p><p>Also, please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/3b1d8b58-710f-4227-a66f-8044eae16f2a.mp3?source=rss&amp;aid=d1641f1a-ef84-4b75-8630-d50db48cc559.mp3" length="37111422" type="audio/mpeg" />
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>Whats Old is New Again</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/acd02-whats-old-is-new-again-7a94ecbe093058b1814d9664c530186f</guid>
+      <pubDate>Wed, 14 Aug 2019 23:58:53 -0000</pubDate>
+      <link>http://activediscourse.com/episode/087b3660b47941f8/whats-old-is-new-again</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/03e115b3-99ed-4561-a3ea-c8ddfc098f30/image/ec0d824c-0d39-43fd-adc0-ed7deb7f51ac/ActiveDiscourseArtFinal15x15.jpg" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:50:44</itunes:duration>
+      <description>
+        <![CDATA[<p>We focus on the Samsung Galaxy Note 10. What do we like, dislike, and at least a little bit on the hypocritical loss of the headphone jack.</p><p>Also, please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </description>
+      <itunes:subtitle>We focus on the Samsung Galaxy Note 10. What do we like, dislike, and at least a little bit on the hypocritical loss of the headphone jack.Also, please feel free to share your opinions, feedback, or topic requests by emailing us at SeekAndDefine@gmail.c...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>We focus on the Samsung Galaxy Note 10. What do we like, dislike, and at least a little bit on the hypocritical loss of the headphone jack.</p><p>Also, please feel free to share your opinions, feedback, or topic requests by emailing us at ActiveDiscourse@icloud.com </p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/087b3660-b479-41f8-8944-2eab32155fec.mp3?source=rss&amp;aid=647fba43-661a-4e92-80ad-ef712a818a40.mp3" length="38404806" type="audio/mpeg" />
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
+      <title>Summer 2019</title>
+      <guid isPermaLink="false">seekanddefine.podbean.com/acd01-summer-2019-2a7fc34e59b6c461a837bb2cb692842a</guid>
+      <pubDate>Tue, 23 Jul 2019 02:07:27 -0000</pubDate>
+      <link>http://activediscourse.com/episode/17109999f1f24368/summer-2019</link>
+      <itunes:image href="https://storage.pinecast.net/podcasts/03e115b3-99ed-4561-a3ea-c8ddfc098f30/image/ec0d824c-0d39-43fd-adc0-ed7deb7f51ac/ActiveDiscourseArtFinal15x15.jpg" />
+      <itunes:author>SeekAndDefine</itunes:author>
+      <itunes:duration>00:47:31</itunes:duration>
+      <description>
+        <![CDATA[<p>Active Discourse is a technology podcast series focusing on the grey areas between the Apple and Android ecosystems. </p><p>In this first episode, your cohosts introduce themselves and their allegiances. The main topic this season is to discuss the 3 things each cohost is most excited about that is coming to their platform this fall. </p><p>We wrap the episode up by discussing Brett’s completed Pixel 3a experiment and Bo’s failed gesture experiment</p>
+]]>
+      </description>
+      <itunes:subtitle>Active Discourse is a technology podcast series focusing on the grey areas between the Apple and Android ecosystems. In this first episode, your cohosts introduce themselves and their allegiances. The main topic this season is to discuss the 3 things ea...</itunes:subtitle>
+      <content:encoded>
+        <![CDATA[<p>Active Discourse is a technology podcast series focusing on the grey areas between the Apple and Android ecosystems. </p><p>In this first episode, your cohosts introduce themselves and their allegiances. The main topic this season is to discuss the 3 things each cohost is most excited about that is coming to their platform this fall. </p><p>We wrap the episode up by discussing Brett’s completed Pixel 3a experiment and Bo’s failed gesture experiment</p>
+]]>
+      </content:encoded>
+      <itunes:explicit>no</itunes:explicit>
+      <enclosure url="https://pinecast.com/listen/17109999-f1f2-4368-8e75-4c3cfcb6601f.mp3?source=rss&amp;aid=d8f3f99b-1356-4276-be42-61b90727b05c.mp3" length="35115610" type="audio/mpeg" />
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+  <!-- generated in 0s 90488us -->
+</rss>

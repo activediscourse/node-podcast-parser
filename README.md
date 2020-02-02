@@ -1,27 +1,61 @@
-# node-podcast-parser
-
-[![build status](https://travis-ci.org/akupila/node-podcast-parser.svg?branch=master)](https://travis-ci.org/akupila/node-podcast-parser)
-[![Coverage Status](https://coveralls.io/repos/github/akupila/node-podcast-parser/badge.svg?branch=master)](https://coveralls.io/github/akupila/node-podcast-parser?branch=master)
+# podcast-parser
 
 Parses a podcast RSS feed and returns easy to use object
 
-## Output format
+## installation
 
-Takes an opinionated view on what should be included so not everything is. The goal is to have the result be as normalized as possible across multiple feeds.
+```
+yarn add @activediscourse/podcast-parser
+```
+
+## usage
+
+Pass a string containing XML source:
+
+```js
+const parsePodcast = require('@activediscourse/podcast-parser')
+
+parsePodcast('<podcast xml>')
+  .then(feed => console.log(feed))
+  .catch(e => console.error(e))
+```
+
+This library only handles parsing, so you'll need to fetch the feed
+separately first. For example, using [node-fetch][node-fetch] (or
+[fetch][fetch] in the browser):
+
+```js
+const fetch = require('node-fetch')
+const parsePodcast = require('@activediscourse/podcast-parser')
+
+;(async () => {
+  const response = await fetch("https://pinecast.com/feed/activediscourse")
+  const xml = await response.text()
+  const feed = await parsePodcast(xml)
+
+  return feed
+})()
+  .then(feed => console.log(feed))
+  .catch(e => console.error(e))
+```
+
+## output format
+
+The output is opinionated with the goal of normalizing results across feeds:
 
 ```json
 {
-  "title":       "<Podcast title>",
+  "title": "<Podcast title>",
   "description": {
-    "short":       "<Podcast subtitle>",
-    "long":        "<Podcast description>"
+    "short": "<Podcast subtitle>",
+    "long": "<Podcast description>"
   },
-  "link":       "<Podcast link (usually website for podcast)>",
-  "image":      "<Podcast image>",
-  "language":   "<ISO 639 language>",
-  "copyright":  "<Podcast copyright>",
-  "updated":    "<pubDate or latest episode pubDate>",
-  "explicit":   "<Podcast is explicit, true/false>",
+  "link": "<Podcast link (usually website for podcast)>",
+  "image": "<Podcast image>",
+  "language": "<ISO 639 language>",
+  "copyright": "<Podcast copyright>",
+  "updated": "<pubDate or latest episode pubDate>",
+  "explicit": "<Podcast is explicit, true/false>",
   "categories": [
     "Category>Subcategory"
   ],
@@ -32,119 +66,60 @@ Takes an opinionated view on what should be included so not everything is. The g
   },
   "episodes": [
     {
-      "guid":        "<Unique id>",
-      "title":       "<Episode title>",
+      "guid": "<Unique id>",
+      "title": "<Episode title>",
+      "subtitle": "<Episode subtitle>",
       "description": "<Episode description>",
-      "explicit":    "<Episode is is explicit, true/false>",
-      "image":       "<Episode image>",
-      "published":   "<date>",
-      "duration":    120,
-      "categories":  [
+      "rawDescription": "<Episode description stripped of HTML tags>",
+      "explicit": "<Episode is is explicit, true/false>",
+      "image": "<Episode image>",
+      "published": "<date>",
+      "duration": 120,
+      "categories": [
         "Category"
       ],
       "enclosure": {
         "filesize": 5650889,
-        "type":     "audio/mpeg",
-        "url":      "<mp3 file>"
+        "type": "audio/mpeg",
+        "url": "<mp3 file>"
       }
     }
   ]
 }
 ```
 
-## Installation
+## notes
 
-```
-yarn add node-podcast-parser
-```
+### language
 
-## Usage
+Many podcasts have the language set something like `en`. A best effort attempt
+is made to normalize language strings to an [IETF language code][IETF], so for
+example `en` will be converted to `en-us`. Non-English languages will be presented
+for example as `de-DE`.
 
-```js
-const parsePodcast = require('node-podcast-parser');
+### normalization
 
-parsePodcast('<podcast xml>', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
+Not all feeds can be guaranteed to contain all properties, so they are simply
+ommited from the output in that case.
 
-  // data looks like the format above
-  console.log(data);
-});
-```
+Episode categories are included as an empty array if the podcast isn't
+assigned any categories.
 
-## Parsing a remote feed
+Episodes are sorted in descending order by publish date.
 
-`node-podcast-parser` only takes care of the parsing itself, you'll need to download the feed first yourself.
+## development
 
-Download the feed however you want, for instance using [request](https://github.com/request/request)
 
-Example:
 
-```js
-const request = require('request');
-const parsePodcast = require('node-podcast-parser');
+## license
 
-request('<podcast url>', (err, res, data) => {
-  if (err) {
-    console.error('Network error', err);
-    return;
-  }
+MIT © Bo Lingen / citycide
 
-  parsePodcast(data, (err, data) => {
-    if (err) {
-      console.error('Parsing error', err);
-      return;
-    }
+Based on [`node-podcast-parser`][node-podcast-parser], also MIT, © Antti Kupila.
 
-    console.log(data);
-  });
-});
-```
+See [license](license)
 
-## Testing
-
-```js
-yarn install
-yarn run test
-```
-
-## Test coverage
-
-```js
-yarn install
-yarn run cover
-```
-
-## Special notes
-
-### Language
-
-A lot of podcasts have the language set something like `en`. 
-The spec requires the language to be [ISO 639](www.loc.gov/standards/iso639-2/php/code_list.php) so it will be convered to `en-us`.
-A non-English language will be `lang-lang` such as `de-de`.
-The language is always lowercase.
-
-### Cleanup
-
-Most content is left as it is but whitespace at beginning and end of strings is trimmed.
-
-### Missing properties
-
-Unfortunately not all podcasts contain all properties. If so they are simply ommited from the output.
-
-These properties include:
-
-- feed TTL
-- episode categories
-- episode image
-- etc
-
-Episode categories are included as an empty array if the podcast doesn't contain any categories.
-
-### Generic RSS feeds
-
-This module is specifically aimed at parsing RSS feeds and doesn't cater for more generic feeds from blogs etc.
-
-Use [node-feedparser](https://github.com/danmactough/node-feedparser)
+[fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+[node-fetch]: https://github.com/node-fetch/node-fetch
+[node-podcast-parser]: https://github.com/akupila/node-podcast-parser
+[IETF]: https://en.wikipedia.org/wiki/IETF_language_tag
