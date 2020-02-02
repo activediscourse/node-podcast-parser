@@ -173,7 +173,7 @@ test("should parse javascript air feed", async t => {
   t.deepEqual(firstEpisode, {
     guid: "http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/",
     title: "007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco",
-    subtitle: "Chakra, Microsoft's Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve LuccoDescription:Microsoft has been making some pretty awesome\r\nmoves in the world of open ...",
+    subtitle: "Chakra, Microsoft's Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve LuccoDescription:Microsoft has been making some pretty awesome\nmoves in the world of open ...",
     published: utcDate(2016, 0, 28, 0, 21, 35),
     // no image
     explicit: false,

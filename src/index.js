@@ -2,8 +2,12 @@
 
 const sax = require("sax")
 
+const CrLfRegex = /\r\n/g
 const languageRegex = /\w\w-\w\w/i
 const htmlTagRegex = /<(?:.|\n)*?>/gm
+
+const normalizeEol = str =>
+  str.replace(CrLfRegex, "\n")
 
 const stripHtml = str =>
   str.replace(htmlTagRegex, "")
@@ -15,7 +19,7 @@ const setPath = (obj, keys, value) => {
   if (typeof keys === "string") {
     return setPath(obj, keys.split("."), value)
   } else if (keys.length === 1) {
-    return (obj[keys[0]] = value)
+    return (obj[keys[0]] = normalizeEol(value))
   } else {
     const [head, ...tail] = keys
     if (!obj[head]) {
@@ -51,16 +55,16 @@ const parseDuration = text =>
     return acc + parseInt(val) * muliplier
   }, 0)
 
-const defaultOptions = {
+const defaultParserOptions = {
   trim: true,
   lowercase: true
 }
 
-module.exports = (feedXml, parserOptions = {}) =>
+module.exports = (feedXml, options = {}) =>
   new Promise((resolve, reject) => {
     const parser = sax.parser(true, {
-      ...defaultOptions,
-      ...parserOptions
+      ...defaultParserOptions,
+      ...(options.parser || {})
     })
 
     const result = {
@@ -107,6 +111,7 @@ module.exports = (feedXml, parserOptions = {}) =>
       } else if (node.name === "itunes:category") {
         const path = [node.attributes.text]
         let tmp = node.parent
+
         // go up to fill in parent categories
         while (tmp && tmp.name === "itunes:category") {
           path.unshift(tmp.attributes.text)
@@ -162,11 +167,17 @@ module.exports = (feedXml, parserOptions = {}) =>
         if (!result.episodes) {
           result.episodes = []
         }
+
         // coalesce descriptions (no breaking change)
         let description = ""
         if (tmpEpisode.description) {
-          description = tmpEpisode.description.primary || tmpEpisode.description.alternate || ""
+          description = normalizeEol(
+            tmpEpisode.description.primary ||
+            tmpEpisode.description.alternate ||
+            ""
+          )
         }
+
         tmpEpisode.description = description
         tmpEpisode.rawDescription = stripHtml(description)
         result.episodes.push(tmpEpisode)
@@ -195,8 +206,9 @@ module.exports = (feedXml, parserOptions = {}) =>
           } else {
             const keyName = key === true ? node.name : key
             const prevValue = node.parent.target[keyName]
+
             // ontext can fire multiple times, if so append to previous value
-            // this happens with "text &amp; other text"
+            // this happens with e.g. "text &amp; other text"
             setPath(node.parent.target, keyName, prevValue ? `${prevValue} ${text}` : text)
           }
         }
@@ -206,6 +218,7 @@ module.exports = (feedXml, parserOptions = {}) =>
         if (!tmpEpisode.categories) {
           tmpEpisode.categories = []
         }
+
         tmpEpisode.categories.push(text)
       }
     }
