@@ -28,8 +28,9 @@
     "xml"
   ],
   "scripts": {
+    "lint": "eslint src test",
     "test": "ava",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run lint && npm run test"
   },
   "dependencies": {
     "sax": "1.2.4"
