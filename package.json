@@ -1,6 +1,6 @@
 {
   "name": "@activediscourse/podcast-parser",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "description": "Parse XML podcast feeds into objects",
   "license": "MIT",
   "author": "Bo Lingen <lingenbw@gmail.com> (https://github.com/citycide)",
