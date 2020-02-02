@@ -1,6 +1,6 @@
 # podcast-parser
 
-Parses a podcast RSS feed and returns easy to use object
+Parse XML podcast RSS feeds into standardized objects.
 
 ## installation
 
