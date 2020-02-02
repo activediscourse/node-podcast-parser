@@ -13,9 +13,9 @@ yarn add @activediscourse/podcast-parser
 Pass a string containing XML source:
 
 ```js
-const parsePodcast = require('@activediscourse/podcast-parser')
+const parsePodcast = require("@activediscourse/podcast-parser")
 
-parsePodcast('<podcast xml>')
+parsePodcast("<podcast xml>")
   .then(feed => console.log(feed))
   .catch(e => console.error(e))
 ```
@@ -25,8 +25,8 @@ separately first. For example, using [node-fetch][node-fetch] (or
 [fetch][fetch] in the browser):
 
 ```js
-const fetch = require('node-fetch')
-const parsePodcast = require('@activediscourse/podcast-parser')
+const fetch = require("node-fetch")
+const parsePodcast = require("@activediscourse/podcast-parser")
 
 ;(async () => {
   const response = await fetch("https://pinecast.com/feed/activediscourse")
@@ -109,7 +109,11 @@ Episodes are sorted in descending order by publish date.
 
 ## development
 
-
+1. Clone the repo: `git clone https://github.com/activediscourse/podcast-parser.git`
+2. Move into the new directory: `cd podcast-parser`
+3. Install dependencies: `yarn`
+4. Build the source: `yarn build`
+5. Run tests: `yarn test`
 
 ## license
 
